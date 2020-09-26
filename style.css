@@ -2,42 +2,48 @@
 
 /* Global */
 html{
-  min-height: 100%;
-  overflow: hidden;
+    
 }
 
 .line-1{
+    font-family: 'VT323', monospace;
     position: relative;
-    top: 50%;  
-    margin: 0 auto;
-    width: 24em;
+    top: 44%;  
     font-size: 180%;
     text-align: center;
+    margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
+    color: greenyellow;
 }
 
 /* Animation */
 .anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+              blink-caret .75s step-end infinite;
 }
 @keyframes typewriter{
   from{width:0;}
-  to{width: 24em;}
+  to{width: 100%;}
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: transparent; }
 }
 
 .intro{
     height:100vh;
-    background-image: url(images/home.png);
-    background-size:cover;
+    background-color: black;
 }
 .name{
     font-size: 200%;
     width: -20em;
+}
+#spotLight {
+  width:1024px;
+  height:768px;
+  z-index:9;
+  position:absolute;
+  display:none;
 }
