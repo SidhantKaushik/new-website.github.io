@@ -5,14 +5,22 @@ html{
      margin: 0 auto;
 }
 .content{
-    height: 100vh;
+    min-height:height: 100vh;
     background-color: black;
-    font-size: 7vh;
-    color: greenyellow;
-    padding: 0;
-    text-align: center;
+    font-size: 5vh;
+    color: lightblue;
+    padding: 10%;
     font-family: 'VT323', monospace;
-    
+}
+.box{
+    padding: 2% 0% 0% 10%;
+}
+.f-r{
+    font-family: sans-serif;
+}
+.text{
+    font-size: 2.8vh;
+    color: navajowhite;
 }
 .content p {
     position: relative;
@@ -31,7 +39,7 @@ max-height:100%;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    color: greenyellow;
+    color: paleturquoise;
 }
 
 /* Animation */
