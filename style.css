@@ -5,13 +5,14 @@ html{
      margin: 0 auto;
 }
 .content{
-    min-height:height: 100vh;
+    min-height: 100vh;
     background-color: black;
     font-size: 5vh;
-    color: lightblue;
+    color: pink;
     padding: 10%;
     font-family: 'VT323', monospace;
 }
+
 .box{
     padding: 2% 0% 0% 10%;
 }
@@ -39,7 +40,7 @@ max-height:100%;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
-    color: paleturquoise;
+    color: pink;
 }
 
 /* Animation */
@@ -58,7 +59,16 @@ max-height:100%;
 
 .intro{
     height:100vh;
-    background-color: black;
+    background-image: url(images/background.png);
+}
+@media screen and (min-width:767px){
+    .intro{
+        background-image: url(images/desktop.jpg);
+    }
+    @keyframes typewriter{
+  from{width:0;}
+  to{width: 24vw;}
+}
 }
 .name{
     font-size: 200%;
