@@ -6,7 +6,7 @@ html{
 }
 .content{
     min-height: 100vh;
-    background-color: black;
+    background-color: #050a2e;
     font-size: 5vh;
     color: pink;
     padding: 10%;
@@ -59,12 +59,9 @@ max-height:100%;
 
 .intro{
     height:100vh;
-    background-image: url(images/background.png);
+    background-color: #050a2e;
 }
 @media screen and (min-width:767px){
-    .intro{
-        background-image: url(images/desktop.jpg);
-    }
     @keyframes typewriter{
   from{width:0;}
   to{width: 24vw;}
