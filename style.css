@@ -18,7 +18,9 @@ a:link {
   background-color: transparent;
   text-decoration: none;
 }
-
+.h100{
+    min-height: 100vh;
+}
 a:visited {
   color: pink;
   background-color: transparent;
@@ -95,10 +97,13 @@ a:visited {
   to{width: 24vw;}
 }
     .ai{
-         vertical-align: bottom;
-        display: table-cell;
-
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
+    .ad{
+    margin-top: 120px;
+}
 }
 .name{
     font-size: 200%;
